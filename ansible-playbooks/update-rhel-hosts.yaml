@@ -1,0 +1,9 @@
+---
+- hosts: all
+
+  become: true
+  tasks:
+  - name: update apt packages
+    yum:
+     upgrade: yes
+     update_cache: yes
